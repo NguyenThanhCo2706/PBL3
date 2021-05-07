@@ -64,5 +64,6 @@ namespace GUI
             a.MaLoaiSach = cbbTL.SelectedItem.ToString();
             BLL_QuanLy.Instance.Bll_AddSach(a);
         }
+
     }
 }

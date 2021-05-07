@@ -39,15 +39,12 @@ namespace GUI
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.iconButton12 = new FontAwesome.Sharp.IconButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
@@ -65,6 +62,7 @@ namespace GUI
             this.nameBook = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.money = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thoat = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -85,7 +83,7 @@ namespace GUI
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(643, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(824, 442);
+            this.groupBox1.Size = new System.Drawing.Size(789, 442);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -159,7 +157,7 @@ namespace GUI
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 20;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(867, 524);
+            this.iconButton5.Location = new System.Drawing.Point(800, 524);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(78, 34);
             this.iconButton5.TabIndex = 36;
@@ -195,7 +193,7 @@ namespace GUI
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 20;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(734, 524);
+            this.iconButton4.Location = new System.Drawing.Point(667, 524);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(121, 34);
             this.iconButton4.TabIndex = 38;
@@ -203,24 +201,6 @@ namespace GUI
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.iconButton1.IconColor = System.Drawing.Color.Blue;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 20;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(644, 524);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(75, 34);
-            this.iconButton1.TabIndex = 41;
-            this.iconButton1.Text = "Xem";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -261,8 +241,6 @@ namespace GUI
             // 
             this.groupBox3.Controls.Add(this.comboBox3);
             this.groupBox3.Controls.Add(this.iconButton7);
-            this.groupBox3.Controls.Add(this.textBox21);
-            this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.textBox17);
             this.groupBox3.Controls.Add(this.numericUpDown4);
             this.groupBox3.Controls.Add(this.label25);
@@ -286,7 +264,7 @@ namespace GUI
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(117, 92);
+            this.comboBox3.Location = new System.Drawing.Point(122, 77);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(149, 28);
             this.comboBox3.TabIndex = 63;
@@ -309,26 +287,9 @@ namespace GUI
             this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton7.UseVisualStyleBackColor = false;
             // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(158, 48);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(201, 27);
-            this.textBox21.TabIndex = 61;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(23, 51);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(117, 20);
-            this.label28.TabIndex = 58;
-            this.label28.Text = "Nơi cung cấp :";
-            // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(116, 133);
+            this.textBox17.Location = new System.Drawing.Point(121, 118);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(150, 27);
             this.textBox17.TabIndex = 54;
@@ -336,7 +297,7 @@ namespace GUI
             // numericUpDown4
             // 
             this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown4.Location = new System.Drawing.Point(117, 176);
+            this.numericUpDown4.Location = new System.Drawing.Point(122, 161);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(150, 27);
             this.numericUpDown4.TabIndex = 53;
@@ -345,7 +306,7 @@ namespace GUI
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(25, 178);
+            this.label25.Location = new System.Drawing.Point(30, 163);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(84, 20);
             this.label25.TabIndex = 49;
@@ -360,7 +321,7 @@ namespace GUI
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.IconSize = 20;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(290, 88);
+            this.iconButton8.Location = new System.Drawing.Point(295, 73);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Size = new System.Drawing.Size(164, 34);
             this.iconButton8.TabIndex = 39;
@@ -373,7 +334,7 @@ namespace GUI
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(25, 136);
+            this.label26.Location = new System.Drawing.Point(30, 121);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(86, 20);
             this.label26.TabIndex = 50;
@@ -383,7 +344,7 @@ namespace GUI
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(25, 95);
+            this.label27.Location = new System.Drawing.Point(30, 80);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(88, 20);
             this.label27.TabIndex = 51;
@@ -503,12 +464,30 @@ namespace GUI
             this.money.Name = "money";
             this.money.Width = 125;
             // 
+            // Thoat
+            // 
+            this.Thoat.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thoat.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Thoat.IconColor = System.Drawing.Color.Red;
+            this.Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Thoat.IconSize = 25;
+            this.Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Thoat.Location = new System.Drawing.Point(1287, 677);
+            this.Thoat.Name = "Thoat";
+            this.Thoat.Size = new System.Drawing.Size(145, 34);
+            this.Thoat.TabIndex = 50;
+            this.Thoat.Text = "Đăng xuất";
+            this.Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Thoat.UseVisualStyleBackColor = false;
+            // 
             // QuanLySach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1444, 753);
+            this.Controls.Add(this.Thoat);
             this.Controls.Add(this.iconButton12);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.comboBox1);
@@ -516,7 +495,6 @@ namespace GUI
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.iconButton4);
-            this.Controls.Add(this.iconButton1);
             this.Name = "QuanLySach";
             this.Text = "Quản lý kho sách";
             this.groupBox1.ResumeLayout(false);
@@ -535,7 +513,6 @@ namespace GUI
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label10;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
@@ -549,8 +526,6 @@ namespace GUI
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox comboBox3;
         private FontAwesome.Sharp.IconButton iconButton7;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.Label label25;
@@ -568,5 +543,6 @@ namespace GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn nameBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.DataGridViewTextBoxColumn money;
+        private FontAwesome.Sharp.IconButton Thoat;
     }
 }

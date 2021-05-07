@@ -29,91 +29,133 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.TenNXB = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.MaNXB = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Thoat = new System.Windows.Forms.Button();
-            this.OK = new System.Windows.Forms.Button();
+            this.MaNXB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TenNXB = new System.Windows.Forms.TextBox();
+            this.OK = new FontAwesome.Sharp.IconButton();
+            this.Thoat = new FontAwesome.Sharp.IconButton();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TenNXB
+            // groupBox1
             // 
-            this.TenNXB.Location = new System.Drawing.Point(390, 247);
-            this.TenNXB.Name = "TenNXB";
-            this.TenNXB.Size = new System.Drawing.Size(100, 22);
-            this.TenNXB.TabIndex = 4;
+            this.groupBox1.Controls.Add(this.OK);
+            this.groupBox1.Controls.Add(this.Thoat);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.MaNXB);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.TenNXB);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(3, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(445, 307);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
-            // label2
+            // label8
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(311, 247);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tên NXB";
-            // 
-            // MaNXB
-            // 
-            this.MaNXB.Location = new System.Drawing.Point(390, 181);
-            this.MaNXB.Name = "MaNXB";
-            this.MaNXB.Size = new System.Drawing.Size(100, 22);
-            this.MaNXB.TabIndex = 5;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 29);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Nhà xuất bản";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(311, 181);
+            this.label1.Location = new System.Drawing.Point(32, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Mã NXB";
+            this.label1.Size = new System.Drawing.Size(142, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã nhà xuất bản :";
             // 
-            // Thoat
+            // MaNXB
             // 
-            this.Thoat.Location = new System.Drawing.Point(312, 295);
-            this.Thoat.Name = "Thoat";
-            this.Thoat.Size = new System.Drawing.Size(75, 23);
-            this.Thoat.TabIndex = 6;
-            this.Thoat.Text = "Thoat";
-            this.Thoat.UseVisualStyleBackColor = true;
-            this.Thoat.Click += new System.EventHandler(this.Thoat_Click);
+            this.MaNXB.Location = new System.Drawing.Point(199, 93);
+            this.MaNXB.Name = "MaNXB";
+            this.MaNXB.Size = new System.Drawing.Size(147, 27);
+            this.MaNXB.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 155);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(147, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên nhà xuất bản :";
+            // 
+            // TenNXB
+            // 
+            this.TenNXB.Location = new System.Drawing.Point(199, 148);
+            this.TenNXB.Name = "TenNXB";
+            this.TenNXB.Size = new System.Drawing.Size(147, 27);
+            this.TenNXB.TabIndex = 1;
             // 
             // OK
             // 
-            this.OK.Location = new System.Drawing.Point(461, 295);
+            this.OK.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.OK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OK.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.OK.IconColor = System.Drawing.Color.Blue;
+            this.OK.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.OK.IconSize = 20;
+            this.OK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OK.Location = new System.Drawing.Point(291, 238);
             this.OK.Name = "OK";
-            this.OK.Size = new System.Drawing.Size(75, 23);
-            this.OK.TabIndex = 7;
-            this.OK.Text = "OK";
-            this.OK.UseVisualStyleBackColor = true;
-            this.OK.Click += new System.EventHandler(this.OK_Click);
+            this.OK.Size = new System.Drawing.Size(122, 34);
+            this.OK.TabIndex = 37;
+            this.OK.Text = "Xác nhận";
+            this.OK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.OK.UseVisualStyleBackColor = false;
+            // 
+            // Thoat
+            // 
+            this.Thoat.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thoat.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Thoat.IconColor = System.Drawing.Color.Red;
+            this.Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Thoat.IconSize = 25;
+            this.Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Thoat.Location = new System.Drawing.Point(36, 238);
+            this.Thoat.Name = "Thoat";
+            this.Thoat.Size = new System.Drawing.Size(110, 34);
+            this.Thoat.TabIndex = 36;
+            this.Thoat.Text = "Thoát";
+            this.Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Thoat.UseVisualStyleBackColor = false;
             // 
             // ThemNXB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Thoat);
-            this.Controls.Add(this.OK);
-            this.Controls.Add(this.TenNXB);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.MaNXB);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(449, 332);
+            this.Controls.Add(this.groupBox1);
             this.Name = "ThemNXB";
             this.Text = "ThemNXB";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox TenNXB;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox MaNXB;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Thoat;
-        private System.Windows.Forms.Button OK;
+        private System.Windows.Forms.TextBox MaNXB;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TenNXB;
+        private FontAwesome.Sharp.IconButton OK;
+        private FontAwesome.Sharp.IconButton Thoat;
     }
 }
