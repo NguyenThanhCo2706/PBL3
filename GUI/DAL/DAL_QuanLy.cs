@@ -48,7 +48,7 @@ namespace GUI.DAL
 
         public List<SACH> Dal_GetAllSach()
         {
-            //QuanLyEntities db = new QuanLyEntities();
+            //QuanLyEntities db = new QuanLyEntities();sdfsdfsfdsdfsdfefwfefew
             var list = db.SACHes.ToList();
             List<SACH> lSach = list;
             return lSach;
