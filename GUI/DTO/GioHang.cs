@@ -8,7 +8,7 @@ namespace GUI.DTO
 {
     class GioHang
     {
-        public int STT { get; set; }
+        public string MaDonBan { get; set; }
         public string SoDT { get; set; }
         public string HoTen { get; set; }
         public string MaSach { get; set; }

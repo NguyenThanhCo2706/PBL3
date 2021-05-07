@@ -42,6 +42,7 @@ namespace GUI
             this.cbbMaDonNhap = new System.Windows.Forms.ComboBox();
             this.Thoat = new System.Windows.Forms.Button();
             this.OK = new System.Windows.Forms.Button();
+            this.ThemHoaDon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -156,11 +157,22 @@ namespace GUI
             this.OK.UseVisualStyleBackColor = true;
             this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
+            // ThemHoaDon
+            // 
+            this.ThemHoaDon.Location = new System.Drawing.Point(427, 89);
+            this.ThemHoaDon.Name = "ThemHoaDon";
+            this.ThemHoaDon.Size = new System.Drawing.Size(113, 23);
+            this.ThemHoaDon.TabIndex = 47;
+            this.ThemHoaDon.Text = "ThemHoaDon";
+            this.ThemHoaDon.UseVisualStyleBackColor = true;
+            this.ThemHoaDon.Click += new System.EventHandler(this.ThemHoaDon_Click);
+            // 
             // ThemChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ThemHoaDon);
             this.Controls.Add(this.Thoat);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.cbbMaDonNhap);
@@ -196,5 +208,6 @@ namespace GUI
         private System.Windows.Forms.ComboBox cbbMaDonNhap;
         private System.Windows.Forms.Button Thoat;
         private System.Windows.Forms.Button OK;
+        private System.Windows.Forms.Button ThemHoaDon;
     }
 }

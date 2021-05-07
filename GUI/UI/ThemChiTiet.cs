@@ -58,5 +58,11 @@ namespace GUI
             };
             BLL_QuanLy.Instance.Bll_AddChiTietHoaDonNhap(ct);     
         }
+
+        private void ThemHoaDon_Click(object sender, EventArgs e)
+        {
+            ThemHoaDon f = new ThemHoaDon();
+            f.Show();
+        }
     }
 }

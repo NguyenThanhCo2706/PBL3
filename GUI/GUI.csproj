@@ -94,6 +94,9 @@
     <Compile Include="SACH.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="TK_NHANVIEN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="UI\ThemChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +120,6 @@
     </Compile>
     <Compile Include="UI\ThemTLSach.Designer.cs">
       <DependentUpon>ThemTLSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TK_NHANVIEN.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DTO\CHI_TIET_HOA_DON_BAN.cs" />
     <Compile Include="DTO\CHI_TIET_HOA_DON_NHAP.cs" />

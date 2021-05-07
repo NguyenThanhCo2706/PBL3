@@ -42,11 +42,13 @@ namespace GUI
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.ThemHoaDon = new System.Windows.Forms.Button();
             this.ThemChiTiet = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Them = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -141,7 +143,6 @@ namespace GUI
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = false;
-            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton6
             // 
@@ -178,7 +179,6 @@ namespace GUI
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = false;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
             // 
@@ -197,7 +197,6 @@ namespace GUI
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -234,21 +233,10 @@ namespace GUI
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // ThemHoaDon
-            // 
-            this.ThemHoaDon.Location = new System.Drawing.Point(922, 172);
-            this.ThemHoaDon.Name = "ThemHoaDon";
-            this.ThemHoaDon.Size = new System.Drawing.Size(113, 23);
-            this.ThemHoaDon.TabIndex = 46;
-            this.ThemHoaDon.Text = "ThemHoaDon";
-            this.ThemHoaDon.UseVisualStyleBackColor = true;
-            this.ThemHoaDon.Click += new System.EventHandler(this.ThemHoaDon_Click);
             // 
             // ThemChiTiet
             // 
-            this.ThemChiTiet.Location = new System.Drawing.Point(922, 238);
+            this.ThemChiTiet.Location = new System.Drawing.Point(977, 140);
             this.ThemChiTiet.Name = "ThemChiTiet";
             this.ThemChiTiet.Size = new System.Drawing.Size(113, 23);
             this.ThemChiTiet.TabIndex = 46;
@@ -256,19 +244,49 @@ namespace GUI
             this.ThemChiTiet.UseVisualStyleBackColor = true;
             this.ThemChiTiet.Click += new System.EventHandler(this.ThemChiTiet_Click);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(977, 172);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(395, 351);
+            this.dataGridView2.TabIndex = 47;
+            // 
+            // Them
+            // 
+            this.Them.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Them.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.Them.IconColor = System.Drawing.Color.Blue;
+            this.Them.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Them.IconSize = 20;
+            this.Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Them.Location = new System.Drawing.Point(977, 540);
+            this.Them.Name = "Them";
+            this.Them.Size = new System.Drawing.Size(85, 34);
+            this.Them.TabIndex = 39;
+            this.Them.Text = "Thêm";
+            this.Them.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Them.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Them.UseVisualStyleBackColor = false;
+            this.Them.Click += new System.EventHandler(this.Them_Click);
+            // 
             // QuanLySach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1444, 753);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.ThemChiTiet);
-            this.Controls.Add(this.ThemHoaDon);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.iconButton4);
+            this.Controls.Add(this.Them);
             this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.iconButton2);
             this.Controls.Add(this.iconButton1);
@@ -278,6 +296,7 @@ namespace GUI
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,7 +315,8 @@ namespace GUI
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button ThemHoaDon;
         private System.Windows.Forms.Button ThemChiTiet;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private FontAwesome.Sharp.IconButton Them;
     }
 }

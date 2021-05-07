@@ -48,18 +48,20 @@ namespace GUI
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.hoTen = new System.Windows.Forms.TextBox();
+            this.HoTen = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.sdt = new System.Windows.Forms.TextBox();
+            this.SDT = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.MaDonBan = new System.Windows.Forms.TextBox();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ThanhToan = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.Thoat = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -122,7 +124,7 @@ namespace GUI
             this.iconPictureBox1.TabIndex = 23;
             this.iconPictureBox1.TabStop = false;
             // 
-            // Show
+            // show
             // 
             this.show.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.show.IconChar = FontAwesome.Sharp.IconChar.ThList;
@@ -137,6 +139,7 @@ namespace GUI
             this.show.Text = "show";
             this.show.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.show.UseVisualStyleBackColor = false;
+            this.show.Click += new System.EventHandler(this.show_Click);
             // 
             // label7
             // 
@@ -191,20 +194,22 @@ namespace GUI
             this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.hoTen);
+            this.groupBox2.Controls.Add(this.HoTen);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.sdt);
+            this.groupBox2.Controls.Add(this.SDT);
             this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.MaDonBan);
             this.groupBox2.Controls.Add(this.txt1);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 96);
+            this.groupBox2.Location = new System.Drawing.Point(12, 79);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(614, 569);
+            this.groupBox2.Size = new System.Drawing.Size(614, 586);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             // 
@@ -223,7 +228,7 @@ namespace GUI
             // cbbMaSach
             // 
             this.cbbMaSach.FormattingEnabled = true;
-            this.cbbMaSach.Location = new System.Drawing.Point(253, 164);
+            this.cbbMaSach.Location = new System.Drawing.Point(254, 188);
             this.cbbMaSach.Name = "cbbMaSach";
             this.cbbMaSach.Size = new System.Drawing.Size(187, 28);
             this.cbbMaSach.TabIndex = 23;
@@ -280,7 +285,7 @@ namespace GUI
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(254, 202);
+            this.numericUpDown1.Location = new System.Drawing.Point(255, 226);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(186, 27);
             this.numericUpDown1.TabIndex = 19;
@@ -304,56 +309,74 @@ namespace GUI
             this.label11.TabIndex = 15;
             this.label11.Text = "Tổng cộng";
             // 
-            // hoTen
+            // HoTen
             // 
-            this.hoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoTen.Location = new System.Drawing.Point(253, 120);
-            this.hoTen.Name = "hoTen";
-            this.hoTen.Size = new System.Drawing.Size(186, 27);
-            this.hoTen.TabIndex = 14;
+            this.HoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HoTen.Location = new System.Drawing.Point(254, 144);
+            this.HoTen.Name = "HoTen";
+            this.HoTen.Size = new System.Drawing.Size(186, 27);
+            this.HoTen.TabIndex = 14;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(26, 123);
+            this.label12.Location = new System.Drawing.Point(27, 147);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 20);
             this.label12.TabIndex = 13;
             this.label12.Text = "Họ Tên";
             // 
-            // sdt
+            // SDT
             // 
-            this.sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sdt.Location = new System.Drawing.Point(252, 77);
-            this.sdt.Name = "sdt";
-            this.sdt.Size = new System.Drawing.Size(186, 27);
-            this.sdt.TabIndex = 14;
+            this.SDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SDT.Location = new System.Drawing.Point(253, 101);
+            this.SDT.Name = "SDT";
+            this.SDT.Size = new System.Drawing.Size(186, 27);
+            this.SDT.TabIndex = 14;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 80);
+            this.label10.Location = new System.Drawing.Point(27, 104);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(196, 20);
             this.label10.TabIndex = 13;
             this.label10.Text = "Số điện thoại khách hàng";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(27, 29);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(96, 20);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Mã đơn bán";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 46);
+            this.label9.Location = new System.Drawing.Point(27, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(166, 20);
             this.label9.TabIndex = 12;
             this.label9.Text = "Nhân viên thanh toán";
             // 
+            // MaDonBan
+            // 
+            this.MaDonBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaDonBan.Location = new System.Drawing.Point(255, 22);
+            this.MaDonBan.Name = "MaDonBan";
+            this.MaDonBan.Size = new System.Drawing.Size(186, 27);
+            this.MaDonBan.TabIndex = 11;
+            // 
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(252, 39);
+            this.txt1.Location = new System.Drawing.Point(253, 63);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(186, 27);
             this.txt1.TabIndex = 11;
@@ -382,7 +405,7 @@ namespace GUI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 204);
+            this.label3.Location = new System.Drawing.Point(27, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 2;
@@ -392,7 +415,7 @@ namespace GUI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 167);
+            this.label2.Location = new System.Drawing.Point(27, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 20);
             this.label2.TabIndex = 1;
@@ -416,23 +439,23 @@ namespace GUI
             this.ThanhToan.UseVisualStyleBackColor = false;
             this.ThanhToan.Click += new System.EventHandler(this.ThanhToan_Click);
             // 
-            // iconButton6
+            // Thoat
             // 
-            this.iconButton6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.iconButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.iconButton6.IconColor = System.Drawing.Color.Blue;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 25;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(1459, 686);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(89, 34);
-            this.iconButton6.TabIndex = 22;
-            this.iconButton6.Text = "Exit";
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = false;
-            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
+            this.Thoat.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thoat.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Thoat.IconColor = System.Drawing.Color.Blue;
+            this.Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Thoat.IconSize = 25;
+            this.Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Thoat.Location = new System.Drawing.Point(1459, 686);
+            this.Thoat.Name = "Thoat";
+            this.Thoat.Size = new System.Drawing.Size(89, 34);
+            this.Thoat.TabIndex = 22;
+            this.Thoat.Text = "Exit";
+            this.Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Thoat.UseVisualStyleBackColor = false;
+            this.Thoat.Click += new System.EventHandler(this.Thoat_Click);
             // 
             // NhanVien
             // 
@@ -440,7 +463,7 @@ namespace GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1572, 753);
-            this.Controls.Add(this.iconButton6);
+            this.Controls.Add(this.Thoat);
             this.Controls.Add(this.ThanhToan);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -480,7 +503,7 @@ namespace GUI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox sdt;
+        private System.Windows.Forms.TextBox SDT;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconButton show;
@@ -489,11 +512,13 @@ namespace GUI
         private FontAwesome.Sharp.IconButton ChinhSua;
         private FontAwesome.Sharp.IconButton Them;
         private FontAwesome.Sharp.IconButton ThanhToan;
-        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton Thoat;
         private System.Windows.Forms.ComboBox cbbMaSach;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox hoTen;
+        private System.Windows.Forms.TextBox HoTen;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox MaDonBan;
     }
 }

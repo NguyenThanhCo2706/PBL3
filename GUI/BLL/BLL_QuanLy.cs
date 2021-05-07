@@ -53,7 +53,11 @@ namespace GUI.BLL
             List<SACH> lSach = list;
             return lSach;
         }
-
+        public List<CHI_TIET_HOA_DON_NHAP> Bll_GetAllChiTietHoaDonNhap()
+        {
+            List<CHI_TIET_HOA_DON_NHAP> l = db.CHI_TIET_HOA_DON_NHAP.ToList();
+            return l;
+        }
         public List<string> Bll_GetAllMaSach()
         {
             List<String> list = new List<string>();
@@ -95,6 +99,7 @@ namespace GUI.BLL
         {
             return db.SACHes.Find(masach).GiaBan;
         }
+
         public List<NHAN_VIEN> Bll_GetAllNhanVien()
         {
             List<NHAN_VIEN> list = new List<NHAN_VIEN>();
@@ -118,7 +123,21 @@ namespace GUI.BLL
             db.SACHes.Add(a);
             db.SaveChanges();
         }
-
+        public void Bll_AddKhachHang(KHACH_HANG a)
+        {
+            db.KHACH_HANG.Add(a);
+            db.SaveChanges();
+        }
+        public void Bll_AddHoaDonBan(HOA_DON_BAN a)
+        {
+            db.HOA_DON_BAN.Add(a);
+            db.SaveChanges();
+        }
+        public void Bll_AddChiTietHoaDonBan(CHI_TIET_HOA_DON_BAN a)
+        {
+            db.CHI_TIET_HOA_DON_BAN.Add(a);
+            db.SaveChanges();
+        }
         public void Bll_AddChiTietHoaDonNhap(CHI_TIET_HOA_DON_NHAP a)
         {
             db.CHI_TIET_HOA_DON_NHAP.Add(a);
