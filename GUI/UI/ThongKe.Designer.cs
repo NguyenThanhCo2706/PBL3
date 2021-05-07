@@ -29,9 +29,9 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -51,6 +51,7 @@ namespace GUI
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Thoat = new FontAwesome.Sharp.IconButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -75,15 +76,14 @@ namespace GUI
             // iconButton6
             // 
             this.iconButton6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.iconButton6.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.iconButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Sort;
             this.iconButton6.IconColor = System.Drawing.Color.Blue;
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 20;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.Location = new System.Drawing.Point(254, 417);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Rotation = 0D;
             this.iconButton6.Size = new System.Drawing.Size(100, 34);
             this.iconButton6.TabIndex = 31;
             this.iconButton6.Text = "Sắp sếp";
@@ -185,6 +185,7 @@ namespace GUI
             this.iconPictureBox1.ForeColor = System.Drawing.Color.SlateGray;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Sort;
             this.iconPictureBox1.IconColor = System.Drawing.Color.SlateGray;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 29;
             this.iconPictureBox1.Location = new System.Drawing.Point(286, 34);
             this.iconPictureBox1.Name = "iconPictureBox1";
@@ -205,16 +206,16 @@ namespace GUI
             // 
             // chart1
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(76, 89);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(653, 330);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -269,12 +270,30 @@ namespace GUI
             this.label7.TabIndex = 32;
             this.label7.Text = "1.000.000 VND";
             // 
-            // UiUxThongke
+            // Thoat
+            // 
+            this.Thoat.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thoat.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Thoat.IconColor = System.Drawing.Color.Red;
+            this.Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Thoat.IconSize = 25;
+            this.Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Thoat.Location = new System.Drawing.Point(1250, 670);
+            this.Thoat.Name = "Thoat";
+            this.Thoat.Size = new System.Drawing.Size(145, 34);
+            this.Thoat.TabIndex = 51;
+            this.Thoat.Text = "Đăng xuất";
+            this.Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Thoat.UseVisualStyleBackColor = false;
+            // 
+            // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1444, 753);
+            this.Controls.Add(this.Thoat);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -283,7 +302,7 @@ namespace GUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UiUxThongke";
+            this.Name = "ThongKe";
             this.Text = "Quản lý doanh thu";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -318,5 +337,6 @@ namespace GUI
         private System.Windows.Forms.Label label7;
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconButton Thoat;
     }
 }
