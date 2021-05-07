@@ -51,7 +51,7 @@ namespace GUI
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Thoat = new System.Windows.Forms.Button();
+            this.Thoat = new FontAwesome.Sharp.IconButton();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -305,13 +305,20 @@ namespace GUI
             // 
             // Thoat
             // 
-            this.Thoat.Location = new System.Drawing.Point(35, 424);
+            this.Thoat.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thoat.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Thoat.IconColor = System.Drawing.Color.Red;
+            this.Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Thoat.IconSize = 25;
+            this.Thoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Thoat.Location = new System.Drawing.Point(32, 424);
             this.Thoat.Name = "Thoat";
-            this.Thoat.Size = new System.Drawing.Size(84, 34);
-            this.Thoat.TabIndex = 29;
+            this.Thoat.Size = new System.Drawing.Size(110, 34);
+            this.Thoat.TabIndex = 30;
             this.Thoat.Text = "Thoát";
-            this.Thoat.UseVisualStyleBackColor = true;
-            this.Thoat.Click += new System.EventHandler(this.Thoat_Click);
+            this.Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Thoat.UseVisualStyleBackColor = false;
             // 
             // ThemNhanViens
             // 
@@ -354,6 +361,6 @@ namespace GUI
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button Thoat;
+        private FontAwesome.Sharp.IconButton Thoat;
     }
 }
